@@ -3,3 +3,40 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgb(37, 37, 95);
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 60px auto;
+}
+
+.square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 2px solid white;
+}
+
+.square-hard {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 2px solid white;
+}
+
+.square-crazy {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 2px solid white;
+}
+
+.square.active,
+.square-hard.active,
+.square-crazy.active {
+    background-color: red;
+}
