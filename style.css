@@ -20,23 +20,36 @@ body {
 .square {
     width: calc(100% / 10);
     height: calc(100% / 10);
-    border: 2px solid white;
 }
 
 .square-hard {
     width: calc(100% / 9);
     height: calc(100% / 9);
-    border: 2px solid white;
 }
 
 .square-crazy {
     width: calc(100% / 7);
     height: calc(100% / 7);
+}
+
+.square,
+.square-hard,
+.square-crazy {
     border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .square.active,
 .square-hard.active,
 .square-crazy.active {
+    background-color: green;
+}
+
+.square.active.mina,
+.square-hard.active.mina,
+.square-crazy.active.mina {
     background-color: red;
 }
